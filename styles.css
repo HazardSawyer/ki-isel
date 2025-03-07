@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #7b2cbf, #3c096c);
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.sidebar {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ffcc00;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
